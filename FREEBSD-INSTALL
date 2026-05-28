@@ -1,0 +1,8 @@
+# Install the Minecraft server starting script to /usr/bin on a FreeBSD system.
+#!/bin/sh
+cd /usr/local/bin
+fetch "https://raw.githubusercontent.com/pacman-admin/Minecraft-Server-tools/refs/heads/main/mc-server"
+fetch "https://raw.githubusercontent.com/pacman-admin/Minecraft-Server-tools/refs/heads/main/startmc"
+chmod 0755 mc-server startmc
+sudo chown root:wheel mc-server startmc
+cd -
