@@ -5,4 +5,5 @@ fetch "https://raw.githubusercontent.com/pacman-admin/Minecraft-Server-tools/ref
 fetch "https://raw.githubusercontent.com/pacman-admin/Minecraft-Server-tools/refs/heads/main/startmc"
 chmod 0755 mc-server startmc
 sudo chown root:wheel mc-server startmc
+sudo pkg install tmux
 cd -
